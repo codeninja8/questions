@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-size: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+img, textarea {
+    vertical-align: top;
+}
+
+.cb {
+    clear: both;
+}
+
+.clear-fix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.select-none {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tj {
+    text-align: justify;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dn {
+    display: none;
+}
+
+.ver-top-box {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pr {
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+input[type="submit"][disabled="disabled"] {
+    /*
+    background: url("/images/loader.gif") no-repeat center 88% #949494 !important;
+    color: #cecece !important;
+    */
+    cursor: default !important;
+}
+
+a {
+    color: #1767b3;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -khtml-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+i,
+em,
+.italic {
+    font-style: italic;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+
+.scroller-block {
+    overflow: auto;
+}
+
+.table-responsive,
+.scroller-block {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-base-color: #1767B3;
+    scrollbar-3dlight-color: #fff;
+    scrollbar-highlight-color: #fff;
+    scrollbar-track-color: #E9E9E9;
+    scrollbar-arrow-color: #fff;
+    scrollbar-shadow-color: #1767B3;
+    scrollbar-dark-shadow-color: #1767B3;
+}
+
+.table-responsive::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar,
+.scroller-block::-webkit-scrollbar-thumb,
+.scroller-block::-webkit-scrollbar-track,
+.scroller-block::-webkit-scrollbar {
+    border-radius: 3px;
+    height: 6px;
+    width: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track,
+.scroller-block::-webkit-scrollbar-track {
+    background-color: #E9E9E9;
+}
+
+.table-responsive::-webkit-scrollbar-thumb,
+.scroller-block::-webkit-scrollbar-thumb {
+    background-color: #1767B3;
+}
+
+
+/* For 1x devices */
+
+.sprite,
+.sprite-b:before {
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+
+.sprite-b:before {
+    content: '';
+}
+
+.trans-color {
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -khtml-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.trans-background {
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -khtml-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+.trans-all{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -khtml-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.trans-transform {
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -khtml-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.fs12 { font-size: 0.750em; }
+.fs13 { font-size: 0.813em; }
+.fs14 { font-size: 0.875em; }
+.fs15 { font-size: 0.938em; }
+.fs16 { font-size: 1.000em; }
+.fs17 { font-size: 1.063em; }
+.fs18 { font-size: 1.125em; }
+.fs19 { font-size: 1.188em; }
+.fs20 { font-size: 1.250em; }
+.fs21 { font-size: 1.313em; }
+.fs22 { font-size: 1.375em; }
+.fs23 { font-size: 1.438em; }
+.fs24 { font-size: 1.500em; }
+.fs25 { font-size: 1.563em; }
+.fs26 { font-size: 1.625em; }
+.fs27 { font-size: 1.688em; }
+.fs28 { font-size: 1.750em; }
+.fs29 { font-size: 1.813em; }
+.fs30 { font-size: 1.875em; }
+.fs31 { font-size: 1.938em; }
+.fs32 { font-size: 2.000em; }
+.fs33 { font-size: 2.063em; }
+.fs34 { font-size: 2.125em; }
+
+/* For 2x devices */
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ),
+only screen and ( -webkit-min-device-pixel-ratio: 1.5 ),
+only screen and ( -moz-min-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 3/2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min--moz-device-pixel-ratio: 1.5),
+only screen and ( min-device-pixel-ratio: 1.5),
+only screen and ( min-device-pixel-ratio: 2) {
+
+    .sprite,
+    .sprite-b:before {
+        background-image: url('../images/sprite2x.png');
+        background-size: 500px auto;
+    }
+
+}
+
+/* For 3x devices */
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 480dpi) {
+
+    .sprite,
+    .sprite-b:before {
+        background-image: url('../images/sprite3x.png');
+        background-size: 500px auto;
+    }
+
+}
+
+/* For 4x devices */
+
+@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 640dpi) {
+
+    .sprite,
+    .sprite-b:before {
+        background-image: url('../images/sprite4x.png');
+        background-size: 500px auto;
+    }
+
+}
